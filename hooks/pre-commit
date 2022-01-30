@@ -1,10 +1,4 @@
-#!/bin/sh
+#!C:/Users/bulld/AppData/Local/Programs/Python/Python39/python.exe
 
-FILES=$(git diff-tree --no-commit-id --name-only HEAD)
-
-for File in FILES; do
-    echo $File
-    if [[ "$File" == *".py" ]]; then
-        $(black ${File})
-    fi
-done
+import subprocess
+subprocess.run("black . --exclude venv", shell=False)
