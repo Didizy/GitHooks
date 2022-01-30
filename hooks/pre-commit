@@ -1,0 +1,4 @@
+#!C:/Users/bulld/AppData/Local/Programs/Python/Python39/python.exe
+
+import subprocess
+subprocess.run("black")
