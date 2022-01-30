@@ -1,0 +1,13 @@
+#!C:/Users/bulld/AppData/Local/Microsoft/WindowsApps/python.exe
+
+import re
+import sys
+
+compare_to = "\[\d+\] .+"
+msg = open(sys.argv[1], 'r').read()
+
+
+if not re.match(compare_to, msg):
+    print('Incorrect commit message')
+    print('Correct commit message: [1] "commit message"')
+    sys.exit(-1)
