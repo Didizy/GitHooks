@@ -1,0 +1,13 @@
+#!C:/Users/bulld/AppData/Local/Microsoft/WindowsApps/python.exe
+
+import re
+import sys
+
+
+commit_pattern = r'^\[[0-9]+\][а-яА-я]+'
+msg = open(sys.argv[1], 'r').read()
+
+
+if not re.match(commit_pattern, msg):
+    print('Incorrect commit message [num]commit')
+    sys.exit(-1)
