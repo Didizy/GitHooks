@@ -1,11 +1,13 @@
-#!C:/Users/bulld/AppData/Local/Microsoft/WindowsApps/python.exe
+#!C:/Users/bulld/AppData/Local/Programs/Python/Python39/python.exe
 
 import re
 import sys
 
 
 commit_pattern = r'^\[[0-9]+\][а-яА-я]+'
-msg = open(sys.argv[1], 'r').read()
+msg = ''
+with open(sys.argv[1], 'r') as os:
+    msg = os.read()
 
 
 if not re.match(commit_pattern, msg):
