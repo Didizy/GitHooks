@@ -1,4 +1,10 @@
-#!C:/Users/bulld/AppData/Local/Programs/Python/Python39/python.exe
+#!/bin/sh
 
-import subprocess
-subprocess.run("black")
+FILES=$(git diff-tree --no-commit-id --name-only HEAD)
+
+for File in FILES; do
+    echo $File
+    if [[ "$File" == *".py" ]]; then
+        $(black ${File})
+    fi
+done
