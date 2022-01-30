@@ -45,8 +45,7 @@ class Client:
     def task_list(self, username, token):
         url = f"{self.base_url}todo/"
 
-        data = {
-            "user": username
+        data = {"user": username
         }
         headers = {'Content-Type': "application/json", "Accept": "*/*", "Authorization": "Bearer " + token}
         self.session.get(url, data=json.dumps(data), headers=headers)
