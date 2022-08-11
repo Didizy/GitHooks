@@ -1,7 +1,7 @@
 #!/bin/bash
 TARGET="/home/biba/GitHooks"
 GIT_DIR="/home/biba/GitHooks/www.git"
-BRANCH="master"
+BRANCH="main"
 
 while read oldrev newrev ref
 do
@@ -13,4 +13,4 @@ do
 	else
 		echo "Ref $ref received. Doing nothing: only the ${BRANCH} branch may be deployed on this server."
 	fi
-done
+dones
