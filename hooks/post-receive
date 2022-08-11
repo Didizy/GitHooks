@@ -1,9 +1,12 @@
-#!/bin/bash
+#!C:/Users/bulld/AppData/Local/Programs/Python/Python39/python.exe
+
 # TARGET="/home/biba/GitHooks"
 # GIT_DIR="/home/biba/GitHooks/www.git"
 BRANCH="main"
 
-echo "post commit msg"
+print('post receive msg')
+
+# echo "post commit msg"
 
 # while read oldrev newrev ref
 # do
