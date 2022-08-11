@@ -1,6 +1,6 @@
 #!/bin/bash
-TARGET="/home/biba/GitHooks"
-GIT_DIR="/home/biba/GitHooks/www.git"
+# TARGET="/home/biba/GitHooks"
+# GIT_DIR="/home/biba/GitHooks/www.git"
 BRANCH="main"
 
 while read oldrev newrev ref
