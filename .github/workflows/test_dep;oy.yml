@@ -19,4 +19,6 @@ jobs:
 
     steps:
     - name: test mkdir
-      run: ssh biba@84.201.140.81
+      run: ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+    - name: bla
+      run: cat ~/.ssh/known_hosts
