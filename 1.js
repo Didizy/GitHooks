@@ -1,1 +1,1 @@
-console.log("JSqqJOB");
+console.log("JSqJOB");
